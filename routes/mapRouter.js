@@ -23,7 +23,7 @@ router.get('/maps/:name/:z/:x/:y', async ctx => {
     } 
 
     let mapEngine = mapStatesCache.get(name);
-    let mapImage = await mapEngine.xyz(z, x, y);
+    let mapImage = await mapEngine.xyz(x, y, z);
 
     let buff = ctx.body = mapImage.toBuffer();
     ctx.type = 'png';

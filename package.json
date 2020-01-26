@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^8.0.6",
+    "axios": "^0.19.2",
     "canvas": "^2.6.1",
     "ginkgoch-map": "^1.7.3",
     "koa": "^2.11.0",
