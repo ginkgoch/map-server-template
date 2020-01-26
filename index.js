@@ -8,7 +8,7 @@ const server = new Koa();
  * the client html and relative resources are hosted by `static` middleware 
  * beneath the `assets` folder.
  */
-server.use(static('./assets'));
+server.use(static('./client'));
 server.use(bodyParser());
 
 /** 
